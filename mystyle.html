@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+             
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .shoe {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0 -10px; /* Added margin to compensate for padding */
+        }
+        .shoe-item {
+            width: calc(25% - 10px); /* Set width to one-third of container minus margin */
+            margin: 0 10px 20px; /* Added margin for spacing between items */
+            padding: 20px;
+            background-color:burlywood;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            
+        }
+        .shoe-item:hover {
+            transform: translateY(-5px); /* Move the item up on hover */
+        }
+        .shoe-img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .shoe-name {
+            font-size: 20px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .shoe-desc {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .shoe-price {
+            font-size: 18px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .buy-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .buy-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your style</h1>
+        <div class="shoe">
+            <div class="shoe-item">
+                <img src="img/air.png" alt="Shoe 1" class="shoe-img">
+                <h2 class="shoe-name">Air-1</h2>
+                <p class="shoe-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="shoe-price">$99.99</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="img/air2.png" alt="Shoe 2" class="shoe-img">
+                <h2 class="shoe-name">Air-2</h2>
+                <p class="shoe-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="shoe-price">$79.99</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="img/jordan.png" alt="Shoe 3" class="shoe-img">
+                <h2 class="shoe-name">Jordan-1</h2>
+                <p class="shoe-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="shoe-price">$89.99</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="img/jordan2.png" alt="Shoe 1" class="shoe-img">
+                <h2 class="shoe-name">Jordan-2</h2>
+                <p class="shoe-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="shoe-price">$99.99</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="img/blazer.png" alt="Shoe 2" class="shoe-img">
+                <h2 class="shoe-name">Blazer-1</h2>
+                <p class="shoe-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="shoe-price">$79.99</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="img/blazer2.png" alt="Shoe 3" class="shoe-img">
+                <h2 class="shoe-name">Blazer-2</h2>
+                <p class="shoe-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="shoe-price">$89.99</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="img/crater.png" alt="Shoe 1" class="shoe-img">
+                <h2 class="shoe-name">Crater-1</h2>
+                <p class="shoe-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="shoe-price">$99.99</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="img/crater2.png" alt="Shoe 2" class="shoe-img">
+                <h2 class="shoe-name">Crater-2</h2>
+                <p class="shoe-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="shoe-price">$79.99</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="shoe-item">
+                <img src="img/hippie.png "alt="Shoe 3" class="shoe-img">
+                <h2 class="shoe-name">hippie</h2>
+                <p class="shoe-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="shoe-price">$89.99</p>
+                <button class="buy-button">Buy Now</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

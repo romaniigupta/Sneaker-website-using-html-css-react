@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Policy</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-image: url(img/login.png);
+    
+
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background:transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color:white;
+}
+
+p, ul {
+    color: wheat
+    ;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color:wheat;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: black;
+}
+
+#message {
+    margin-top: 20px;
+    color: #28a745;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Return Policy</h1>
+        <p>We hope you love your purchase, but if you are not completely satisfied, we accept returns within 30 days of purchase.</p>
+        <ul>
+            <li>Items must be in their original condition and packaging.</li>
+            <li>Items must not be worn, altered, or washed.</li>
+            <li>Original receipt or proof of purchase is required.</li>
+        </ul>
+        <h2>Return Form</h2>
+        <form id="return-form">
+            <label for="order-number">Order Number:</label>
+            <input type="text" id="order-number" name="order-number" required>
+            
+            <label for="reason">Reason for Return:</label>
+            <select id="reason" name="reason" required>
+                <option value="">Select a reason</option>
+                <option value="damaged">Damaged</option>
+                <option value="wrong-item">Wrong Item</option>
+                <option value="not-as-described">Not as Described</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        document.getElementById('return-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const orderNumber = document.getElementById('order-number').value;
+    const reason = document.getElementById('reason').value;
+    const comments = document.getElementById('comments').value;
+
+    if (orderNumber && reason) {
+        document.getElementById('message').textContent = 'Your return request has been submitted successfully.';
+    } else {
+        document.getElementById('message').textContent = 'Please fill in all required fields.';
+        document.getElementById('message').style.color = 'red';
+    }
+});
+
+    </script>
+</body>
+</html>

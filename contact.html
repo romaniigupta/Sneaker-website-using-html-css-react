@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Responsive Page Design</title>
+    <link rel="shortcut icon" type="/img/jpg" href="img/news2.png"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+    </style>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="contactInfo">
+            <div>
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><img src="img/location.png"></span>
+                        <span>shoe complaint <br>
+                            <br>
+                                    11472</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span><img src="img/mail.png"></span>
+                        <!-- <span>nassosanagn@gmail.com</span> -->
+                        <span><a href="mailto:romani.guptaa@gmail.com">romani.guptaa@gmail.com</a></span>
+                    </li>
+                    <li>
+                        <span><img src="img/call.png"></span>
+                        <span>702-279-3488</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/nassosanagn/"><img src="img/1.png"></a></li>
+                <li><a href="https://www.instagram.com/nassosanagn_/?hl=el"><img src="img/3.png"></a></li>
+                <li><a href="https://twitter.com/nassosanagn"><img src="img/2.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/nassos-anagnostopoulos-2b9631196/"><img src="img/5.png"></a></li>
+            </ul>
+        </div>
+        <div class="contactForm">
+            <form action="https://api.web3forms.com/submit" method="post" class="contact">
+                <h2>Send a Message</h2>
+                <div class="formBox">
+                    <input type="hidden" name="access_key" value="43d1a06b-b380-4875-8584-c8dd026c01ae">
+                    <div class="inputBox w50">
+                        <input type="text" name="firstName" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="lastName" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="email" name="email" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="mobileNumber" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea name="message" required></textarea>
+                        <span>Write your message here...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>

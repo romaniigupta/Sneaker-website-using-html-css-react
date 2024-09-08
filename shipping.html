@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Free Shipping Policy</title>
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: url(img/shipping.jpg);
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    width: 100%;
+    background:transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading Styling */
+h1, h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+/* Paragraph and List Styling */
+p, ul {
+    color: wheat;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Form Styling */
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: wheat;
+    font-weight: 500;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Message Styling */
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Free Shipping Policy</h1>
+        <p>We are pleased to offer free shipping across India. For international orders, shipping charges will apply.</p>
+        <ul>
+            <li>Free shipping is available only within India.</li>
+            <li>For international shipping, charges will be calculated at checkout.</li>
+            <li>Estimated delivery time within India is 5-7 business days.</li>
+            <li>International delivery times vary based on location.</li>
+        </ul>
+        <h2>Check Your Shipping Eligibility</h2>
+        <form id="shipping-form">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            <label for="state">State/Province:</label>
+            <input type="text" id="state" name="state" required>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            
+            <button type="submit">Check Shipping</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+document.getElementById('shipping-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const country = document.getElementById('country').value;
+
+    if (country === 'India') {
+        document.getElementById('message').textContent = 'Congratulations! You qualify for free shipping within India.';
+        document.getElementById('message').style.color = '#28a745';
+    } else if (country) {
+        document.getElementById('message').textContent = 'Shipping charges will apply for orders outside India.';
+        document.getElementById('message').style.color = '#ff0000';
+    } else {
+        document.getElementById('message').textContent = 'Please select a country.';
+        document.getElementById('message').style.color = 'red';
+    }
+});
+
+
+    </script>
+</body>
+</html>

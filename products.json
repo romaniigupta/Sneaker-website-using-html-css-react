@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" Air Force-Black",
+        "price": 200,
+        "image": "img/air.png"
+    },
+    {
+        "id": 2,
+        "name":" Air Force-Blue",
+        "price": 250,
+        "image": "img/air2.png"
+    },
+    {
+        "id": 3,
+        "name":" Jordan 1-Grey",
+        "price": 290,
+        "image": "img/jordan.png"
+    },
+    {
+        "id": 4,
+        "name":" Jordan 1-Greeb",
+        "price": 200,
+        "image": "img/jordan2.png"
+    },
+    {
+        "id": 5,
+        "name":" Hippie-1",
+        "price": 300,
+        "image": "img/hippie.png"
+    },
+    {
+        "id": 6,
+        "name":" Hippie-Black",
+        "price": 200,
+        "image": "img/hippie2.png"
+    },
+    {
+        "id": 7,
+        "name":" Nike-Black",
+        "price": 200,
+        "image": "img/crater.png"
+    },
+    {
+        "id": 8,
+        "name":" Nike-White",
+        "price": 200,
+        "image": "img/crater2.png"
+    }
+
+]

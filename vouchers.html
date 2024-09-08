@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background:url(img/login.png)
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .voucher {
+            background:transparent;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .voucher-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .voucher-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .voucher-item {
+            width: 300px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .voucher-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .voucher-details {
+            padding: 20px;
+        }
+
+        .voucher-name {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .voucher-desc {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .voucher-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .voucher-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Available Vouchers</h1>
+
+        <div class="voucher">
+            <h2 class="voucher-title">Gift Cards</h2>
+            <div class="voucher-list">
+                <div class="voucher-item">
+                    <img src="img/jordan2.png" alt="Gift Card 1" class="voucher-img">
+                    <div class="voucher-details">
+                        <h3 class="voucher-name">Gift Card Option 1</h3>
+                        <p class="voucher-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                            quidem.</p>
+                        <button class="voucher-button" onclick="applyDiscount(50)">Select</button>
+                    </div>
+                </div>
+                <div class="voucher-item">
+                    <img src="img/air.png" alt="Gift Card 2" class="voucher-img">
+                    <div class="voucher-details">
+                        <h3 class="voucher-name">Gift Card Option 2</h3>
+                        <p class="voucher-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                            quidem.</p>
+                        <button class="voucher-button" onclick="applyDiscount(75)">Select</button>
+                    </div>
+                </div>
+                <div class="voucher-item">
+                    <img src="img/crater2.png" alt="Gift Card 3" class="voucher-img">
+                    <div class="voucher-details">
+                        <h3 class="voucher-name">Gift Card Option 3</h3>
+                        <p class="voucher-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                            quidem.</p>
+                        <button class="voucher-button" onclick="applyDiscount(20)">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more vouchers here as needed -->
+
+    </div>
+
+    <script>
+        function applyDiscount(discount) {
+            alert("Hurry up! Purchase it for " + discount + "% off.");
+            window.location.href = "index.html#product";
+        }
+    </script>
+</body>
+
+</html>
